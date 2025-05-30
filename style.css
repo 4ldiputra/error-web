@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #4f46e5, #9333ea); /* Gradasi ungu-biru */
+    color: #1a1a2e;
+  }
+  
+  /* Desktop Container */
+  .container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  /* Left: Image */
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left img {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  /* Right: Text */
+  .right {
+    flex: 1;
+    padding: 20px;
+    color: white; /* agar kontras dengan background */
+  }
+  
+  .right h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  
+  .right p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .right strong {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #e0e7ff;
+  }
+  
+  /* Mobile View */
+  .mobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #4f46e5, #9333ea);
+    color: white;
+    padding: 40px 20px;
+    height: 100vh;
+  }
+  
+  .mobile img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .mobile h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .mobile p,
+  .mobile strong {
+    font-size: 1.2rem;
+  }
+  
+  .credit {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  /* Responsive: Mobile */
+  @media (max-width: 768px) {
+    .container {
+      display: none;
+    }
+  
+    .mobile {
+      display: flex;
+    }
+  }
+    /* Responsive: Desktop */  
+
+    .extra-message {
+        margin-top: 10px;
+        font-size: 1rem;
+        color: #c7d2fe;
+        animation: fadeIn 2s ease-in-out;
+      }
+      
+      .home-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 24px;
+        background-color: #f59e0b;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        animation: fadeIn 2s ease-in-out;
+      }
+      
+      .home-btn:hover {
+        background-color: #d97706;
+      }
+      
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
